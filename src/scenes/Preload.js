@@ -1,10 +1,10 @@
 import Phaser from 'phaser';
 
-import sky from '../assets/sky.png';
-import ground from '../assets/platform.png';
-import star from '../assets/star.png';
-import bomb from '../assets/bomb.png';
-import dude from '../assets/dude.png';
+import basket from '../assets/disc-basket.png';
+import disc from '../assets/disc.png';
+import face from '../assets/face.png';
+import torso from '../assets/torso.png';
+import legs from '../assets/legs.png';
 
 class Preload extends Phaser.Scene {
 	constructor() {
@@ -12,11 +12,11 @@ class Preload extends Phaser.Scene {
 	}
 
 	preload() {
-		this.load.image('sky', sky);
-        this.load.image('ground', ground);
-        this.load.image('star', star);
-        this.load.image('bomb', bomb);
-        this.load.spritesheet('dude', dude, { frameWidth: 32, frameHeight: 48 });
+		this.load.image('basket', basket);
+		this.load.image('disc', disc);
+		this.load.image('face', face);
+		this.load.image('torso', torso);
+		this.load.image('legs', legs);
 	}
 
 	create() {
